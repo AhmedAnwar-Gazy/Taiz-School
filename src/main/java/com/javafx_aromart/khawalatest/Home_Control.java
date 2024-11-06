@@ -1,10 +1,10 @@
 package com.javafx_aromart.khawalatest;
 import entites.*;
-/* import java.io.IOException;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
- */
+
 import entites.Student;
 import entites.Subject;
 import entites.Teacher;
