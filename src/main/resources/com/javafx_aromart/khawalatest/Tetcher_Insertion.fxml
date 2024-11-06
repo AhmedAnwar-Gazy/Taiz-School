@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: rgb(236 ,254 ,255);;" styleClass="homw" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_aromart.khawalatest.Tetcher_Insertion_Control">
+   <children>
+      <VBox alignment="CENTER" prefHeight="470.0" prefWidth="1166.0" style="-fx-background-color: #ffffff; -fx-max-height: 700; -fx-max-width: 1100; -fx-border-radius: 15px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9157894849777222" green="0.9157894849777222" blue="0.9157894849777222" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <HBox alignment="CENTER" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #edfeff24;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="506.0" prefWidth="391.0" style="-fx-background-color: #6de9f74e; -fx-max-height: 500; -fx-background-radius: 40;">
+                     <children>
+                        <ImageView fx:id="Tetcher_Insertion_Image" fitHeight="305.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@teacher (2).png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="Tetcher_Insertion_Loade" mnemonicParsing="false" onAction="#uploadImageInsert" prefHeight="42.0" prefWidth="130.0" style="-fx-background-radius: 7;" styleClass="button2" stylesheets="@application.css" text="Upload" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin></Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.8421052694320679" green="0.8421052694320679" blue="0.8421052694320679" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="606.0" prefWidth="554.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="532.0">
+                           <children>
+                              <Label prefHeight="50.0" prefWidth="140.0" text="First Name :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="Tetcher_Insertion_FName" prefHeight="35.0" prefWidth="300.0" promptText="First Name" style="-fx-max-width: 300; -fx-background-radius: 7; -fx-border-color: #0000007e; -fx-border-radius: 7;" styleClass="textfil" stylesheets="@application.css">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="54.0" prefWidth="140.0" text="Middle Name :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="Tetcher_Insertion_MName" prefHeight="35.0" prefWidth="300.0" promptText="Middle Name" style="-fx-max-width: 300; -fx-background-radius: 7; -fx-border-color: #0000007e; -fx-border-radius: 7;" styleClass="textfil" stylesheets="@application.css">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="51.0" prefWidth="140.0" text="Last Name :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="Tetcher_Insertion_LName" prefHeight="35.0" prefWidth="300.0" promptText="Last Name" style="-fx-max-width: 300; -fx-background-radius: 7; -fx-border-color: #0000007e; -fx-border-radius: 7;" styleClass="textfil" stylesheets="@application.css">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="66.0" prefWidth="140.0" text="Degree :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="Tetcher_Insertion_ChiceBox_Dagree" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: rgb(8 ,47 ,73); -fx-background-radius: 7;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="424.0">
+                           <children>
+                              <Label prefHeight="66.0" prefWidth="140.0" text="Subjects :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ChoiceBox fx:id="Tetcher_Insertion_ChiceBox_Subjects" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: rgb(8 ,47 ,73); -fx-background-radius: 7;">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect></ChoiceBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="424.0">
+                           <children>
+                              <Label prefHeight="69.0" prefWidth="140.0" text="Birthday :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="Tetcher_Insertion_DatePicer_BirthDate" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: rgb(8 ,47 ,73);">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect></DatePicker>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="424.0">
+                           <children>
+                              <Label prefHeight="50.0" prefWidth="270.0" text="gender :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <RadioButton fx:id="Tetcher_Insertion_RadioMale" mnemonicParsing="false" prefHeight="50.0" prefWidth="66.0" text="male">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></RadioButton>
+                              <RadioButton fx:id="Tetcher_Insertion_RadioFemail" mnemonicParsing="false" prefHeight="50.0" prefWidth="72.0" text="femal" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="140.0" text="place of birth :" textFill="#082f49">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="Tetcher_Insertion_BirthPlace" prefHeight="35.0" prefWidth="300.0" promptText="place of birth" style="-fx-max-width: 300; -fx-background-radius: 7; -fx-border-color: #0000007e; -fx-border-radius: 7;" styleClass="textfil" stylesheets="@application.css">
+                                 <effect>
+                                    <DropShadow>
+                                       <color>
+                                          <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="424.0">
+                           <children>
+                              <Label prefHeight="50.0" prefWidth="291.0" text="Activ :">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <CheckBox fx:id="Tetcher_Insertion_CheckActiv" mnemonicParsing="false" prefHeight="50.0" prefWidth="209.0" text="CheckBox" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="Tetcher_Insertion_Submet" mnemonicParsing="false" onAction="#submetInsert" prefHeight="40.0" prefWidth="170.0" style="-fx-background-radius: 15;" stylesheets="@application.css" text="Submet" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

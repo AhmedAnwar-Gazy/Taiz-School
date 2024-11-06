@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="843.0" style="-fx-background-color: rgb(240 ,249 ,255);;" styleClass="homw" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_aromart.khawalatest.Student_Edit_Control">
+   <children>
+      <VBox alignment="CENTER" prefHeight="470.0" prefWidth="1166.0" style="-fx-background-color: #ffffff; -fx-max-height: 700; -fx-max-width: 1100; -fx-border-radius: 15px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9157894849777222" green="0.9157894849777222" blue="0.9157894849777222" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TableView fx:id="Student_Edit_Tabel" prefHeight="450.0" prefWidth="800.0" style="-fx-max-width: 800;" stylesheets="@application.css">
+              <columns>
+                <TableColumn fx:id="Student_Edit_Tabel_ID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="Student_Edit_Tabel_Name" prefWidth="191.0" text="Name" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Age" minWidth="6.0" prefWidth="41.0" text="Age" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Sbject1" prefWidth="72.0" text="Subject 1" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Sbject2" prefWidth="71.0" text="Subject 2" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Sbject3" prefWidth="72.0" text="Subject 3" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Sbject4" prefWidth="75.0" text="Subject 4" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Sbject5" prefWidth="68.0" text="Subject 5" />
+                  <TableColumn fx:id="Student_Edit_Tabel_Sbject6" prefWidth="84.0" text="Subject 6" />
+                  <TableColumn fx:id="Student_Edit_Tabel_GBA" prefWidth="50.0" text="GBA" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Student_Edit_Save" mnemonicParsing="false" onAction="#saveEdit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: rgb(8 ,47 ,73); -fx-background-radius: 8;" text="Save" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Student_Edit_delete" mnemonicParsing="false" onAction="#deleteEdit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: rgb(8 ,47 ,73); -fx-background-radius: 8;" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Student_Edit_Back" mnemonicParsing="false" onAction="#backEdit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: rgb(7, 89, 133); -fx-background-radius: 8;" text="Back " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

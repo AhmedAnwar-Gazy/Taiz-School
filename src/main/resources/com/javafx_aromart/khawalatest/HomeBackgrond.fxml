@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<HBox fx:id="mainPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="843.0" style="-fx-background-color: rgb(240 ,249 ,255);;" styleClass="homw" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="470.0" prefWidth="1166.0" style="-fx-background-color: #ffffff; -fx-max-height: 700; -fx-max-width: 1100; -fx-border-radius: 15px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9157894849777222" green="0.9157894849777222" blue="0.9157894849777222" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <HBox alignment="CENTER" prefHeight="376.0" prefWidth="843.0" style="-fx-background-color: #fff;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="230.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-max-height: 350;">
+                     <children>
+                        <ImageView fitHeight="162.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imga/student.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="176.0" prefWidth="267.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imga/left_14096364.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imga/draw_14797587.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="230.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-max-height: 350;">
+                     <children>
+                        <ImageView fitHeight="140.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imga/teacher%20(2).png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="164.0" prefWidth="267.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imga/left_14096364.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imga/draw_14797587.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="230.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-max-height: 350;">
+                     <children>
+                        <ImageView fitHeight="140.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imga/online-course.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="177.0" prefWidth="268.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imga/left_14096364.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imga/draw_14797587.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.95686274766922" green="0.95686274766922" blue="0.95686274766922" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

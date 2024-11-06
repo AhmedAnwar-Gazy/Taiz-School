@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="843.0" style="-fx-background-color: rgb(240 ,249 ,255);;" styleClass="homw" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_aromart.khawalatest.Subject_Edit_Control">
+   <children>
+      <VBox alignment="CENTER" prefHeight="470.0" prefWidth="1166.0" style="-fx-background-color: #ffffff; -fx-max-height: 700; -fx-max-width: 1100; -fx-border-radius: 15px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9157894849777222" green="0.9157894849777222" blue="0.9157894849777222" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TableView fx:id="Subject_Edit_Tabel" prefHeight="425.0" prefWidth="800.0" style="-fx-max-width: 800;">
+              <columns>
+                <TableColumn fx:id="Subject_Edit_Table_Name" prefWidth="115.0" text="Name" />
+                <TableColumn fx:id="Subject_Edit_Table_Book" prefWidth="69.0" text="Book" />
+                  <TableColumn fx:id="Subject_Edit_Table_Minets" prefWidth="75.0" text="Minets" />
+                  <TableColumn fx:id="Subject_Edit_Table_MaxGread" prefWidth="89.0" text="Max Gread" />
+                  <TableColumn fx:id="Subject_Edit_Table_Instractor1" prefWidth="83.0" text="Instractor 1" />
+                  <TableColumn fx:id="Subject_Edit_Table_Instractor2" prefWidth="89.0" text="Instractor 2" />
+                  <TableColumn fx:id="Subject_Edit_Table_Instractor3" prefWidth="89.0" text="Instractor 3" />
+                  <TableColumn fx:id="Subject_Edit_Table_Image" prefWidth="89.0" text="Image" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Subject_Edit_Save" mnemonicParsing="false" onAction="#saveEdit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: rgb(8 ,47 ,73); -fx-background-radius: 8;" text="Save" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Subject_Edit_Back1" mnemonicParsing="false" onAction="#deleteEdit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: rgb(7, 89, 133); -fx-background-radius: 8;" text="delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Subject_Edit_Back" mnemonicParsing="false" onAction="#backEdit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: rgb(7, 89, 133); -fx-background-radius: 8;" text="Back " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

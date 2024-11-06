@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1042.0" style="-fx-background-color: rgb(236 ,254 ,255);" styleClass="homw" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_aromart.khawalatest.Student_Statistics_Control">
+   <children>
+      <VBox alignment="CENTER" prefHeight="470.0" prefWidth="1166.0" style="-fx-background-color: #ffffff; -fx-max-height: 700; -fx-max-width: 1100; -fx-border-radius: 15px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9157894849777222" green="0.9157894849777222" blue="0.9157894849777222" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <HBox alignment="CENTER" prefHeight="300.0" prefWidth="1042.0">
+               <children>
+                  <AreaChart fx:id="Student_Statistics_AreaChart" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+                    <xAxis>
+                      <CategoryAxis fx:id="Xaxis" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="Yaxis" side="LEFT" />
+                    </yAxis>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9254902005195618" green="0.9254902005195618" blue="0.9254902005195618" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AreaChart>
+                  <PieChart fx:id="Student_Statistics_PieChart" prefHeight="231.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9254902005195618" green="0.9254902005195618" blue="0.9254902005195618" />
+                           </color>
+                        </DropShadow>
+                     </effect></PieChart>
+                  <LineChart fx:id="Student_Statistics_linerChart" prefHeight="231.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+                    <xAxis>
+                      <CategoryAxis fx:id="LineX" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="LineY" side="LEFT" />
+                    </yAxis>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9254902005195618" green="0.9254902005195618" blue="0.9254902005195618" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </LineChart>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="300.0" prefWidth="843.0">
+               <children>
+                  <BubbleChart fx:id="Student_Statistics_BubbleChart" prefHeight="259.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+                    <xAxis>
+                      <NumberAxis fx:id="bubbX" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="bubbY" side="LEFT" />
+                    </yAxis>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9254902005195618" green="0.9254902005195618" blue="0.9254902005195618" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </BubbleChart>
+                  <BarChart fx:id="Student_Statistics_BarChart" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+                    <xAxis>
+                      <CategoryAxis fx:id="barX" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="barY" prefWidth="0.0" side="LEFT" />
+                    </yAxis>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.9254902005195618" green="0.9254902005195618" blue="0.9254902005195618" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </BarChart>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

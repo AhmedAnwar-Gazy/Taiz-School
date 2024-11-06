@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_aromart.khawalatest.Subject_Serch_Control">
+   <children>
+      <VBox alignment="CENTER" prefHeight="470.0" prefWidth="941.0" style="-fx-background-color: #ffffff; -fx-max-height: 700; -fx-max-width: 1100; -fx-border-radius: 15px; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9157894849777222" green="0.9157894849777222" blue="0.9157894849777222" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="828.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="476.0">
+                     <children>
+                        <TextField fx:id="Subject_Serch_Serch_Filed" prefHeight="35.0" prefWidth="220.0" promptText="Search" style="-fx-background-color: #fff; -fx-border-radius: 50; -fx-border-color: #000;" />
+                        <Button fx:id="Subject_Serch_Serch_Button" mnemonicParsing="false" onAction="#serch" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: rgb(21 ,94 ,117); -fx-background-radius: 12;" text="Search" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="335.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="146.0" text="Search by" textFill="#164e63">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Label>
+                        <ChoiceBox fx:id="Subject_Serch_filter_ChoiceBox" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: rgb(8, 51 ,68); -fx-background-radius: 12;" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <TableView fx:id="Subject_Serch_Table" prefHeight="295.0" prefWidth="795.0" style="-fx-max-width: 800;" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="Subject_Serch_Table_Name" prefWidth="115.0" text="Name" />
+                  <TableColumn fx:id="Subject_Serch_Table_Book" prefWidth="69.0" text="Book" />
+                  <TableColumn fx:id="Subject_Serch_Table_Minets" prefWidth="75.0" text="Minets" />
+                  <TableColumn fx:id="Subject_Serch_Table_MaxGread" prefWidth="89.0" text="Max Gread" />
+                  <TableColumn fx:id="Subject_Serch_Table_Instractor1" prefWidth="83.0" text="Instractor 1" />
+                  <TableColumn fx:id="Subject_Serch_Table_Instractor2" prefWidth="89.0" text="Instractor 2" />
+                  <TableColumn fx:id="Subject_Serch_Table_Instractor3" prefWidth="89.0" text="Instractor 3" />
+                  <TableColumn prefWidth="89.0" text="Image" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

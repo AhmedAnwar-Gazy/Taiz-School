@@ -1,0 +1,92 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.table-view {
+
+-fx-background-color: #cffafe;
+
+-fx-background-radius: 7px;
+
+-fx-border-color: rgb(8 ,51 ,68);
+
+-fx-border-radius: 7px;
+
+-fx-border-width: 1px;
+
+}
+
+
+.table-view:focused{
+
+-fx-background-color: linear-gradient(#183b3a 0%, #364444 100%);
+
+}
+
+
+.table-view.column-header-background{
+
+-fx-background-color: #000;
+
+-fx-border-width: 1px;
+
+-fx-border-color:   #5ad9bb ;
+
+
+}
+
+.table-view.column-header{
+
+-fx-background-color: #fff;
+
+}
+
+.table-view.column-header-background Label{
+
+-fx-text-fill: #fff;
+}
+
+.butt :hover 
+{
+	-fx-background-color: #fff;
+	-fx-text-fill : #fff ;
+}
+.button :pressed {
+	  -fx-background-color:  rgb(8 ,47 ,73);
+    -fx-text-fill: white;
+} 
+
+.button :active {
+	-fx-text-fill : #fff ;
+} 
+
+
+.button {
+    -fx-background-color:rgb(8 ,145, 178); 
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color:rgb(22, 78 ,99);
+    -fx-text-fill: white;
+    }
+    
+
+ .button2 {
+    -fx-background-color:  rgb(22, 78 ,99);
+    -fx-text-fill: white;
+}
+
+.button2:hover {
+    -fx-background-color: rgb(8 ,51 ,68);
+    -fx-text-fill:white;
+    }
+ 
+  .textfil {
+    -fx-background-color:  #edfeff24;
+   
+}
+
+.textfil:hover {
+    -fx-background-color: rgb(248 ,250 ,252);
+    
+    }
+ 
